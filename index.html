@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portfolio">
 <!-- original -->
   <head>
     <title>Nick Marucci</title>
@@ -44,9 +44,7 @@
         <div class="slide">
           <div class="view1-2">
             <div class="titleblock">
-              <h2>Creativity is the magic that breeds innovation</h2>
-              <p>Taking ideas to the next level through strategic design and detailing<br>
-              <a href="artStuff.html">Art Stuff</a></p>
+              <h2>This is where my routed about/art/build/contact pages will go.</h2>
             </div>
           </div>
         </div>
@@ -57,8 +55,8 @@
           <div class="view2">
             <div class="titleblock">
               <h2>Creativity is the magic that breeds innovation</h2>
-              <p>Taking ideas to the next level through strategic design and detailing<br>
-              <a href="artStuff.html">Art Stuff</a></p>
+              <p>Taking ideas to the next level through strategic design and detailing<br><br>
+              <a href="artStuff.html">I Art Stuff</a></p>
             </div>
           </div>
         </div>
@@ -69,7 +67,7 @@
           <div class="view3">
             <div class="titleblock">
               <h2>Thought<br> Provoking<br>Ideas</h2>
-              <p><a href="buildStuff">Build Stuff</a></p>
+              <p><a href="buildStuff">I Build Stuff</a></p>
             </div>
           </div>
         </div>
@@ -80,7 +78,7 @@
           <div class="view4-1">
             <div class="titleblock">
               <h2>Look what I can do!</h2>
-              <p>Here are some projects I've been working on.</p>
+              <p>Scroll right to see some projects that I've been working on.</p>
             </div>
             <video class="video4" src="videos/GOPR2344.MP4" autoplay muted loop>
             </video>
@@ -89,17 +87,20 @@
         <div class="slide">
           <div class="view4-2">
             <div class="titleblock">
-              <h2>Thought<br> Provoking<br>Ideas</h2>
-              <p><a href="buildStuff">Build Stuff</a></p>
+              <h2><a href="http://www.sol-innovations.com" target="_blank">SoL Innovations Website</a></h2>
             </div>
+            <iframe src="http://www.sol-innovations.com">
+            </iframe>
           </div>
         </div>
+
         <div class="slide">
           <div class="view4-3">
             <div class="titleblock">
-              <h2>Thought<br> Provoking<br>Ideas</h2>
-              <p><a href="buildStuff">Build Stuff</a></p>
+              <h2><a href="http://www.pierce-auto.com" target="_blank">Pierce Auto Restoration</a></h2>
             </div>
+            <iframe src="http://www.pierce-auto.com">
+            </iframe>
           </div>
         </div>
       </div>
@@ -109,8 +110,9 @@
           <div class="view5">
             <div class="titleblock">
               <h2>I Create Magic!</h2>
-              <p>Trust me. I'm an engineer.<br>
-                <a href="#">About Me</a>
+              <p>Trust me. I'm an engineer.
+              </p>
+              <p><a href="#">About Me</a>
               </p>
             </div>
             <footer>
@@ -134,8 +136,9 @@
         css3: true,
         scrollingSpeed: 1000,
         lockAnchors: false,
-        navigation: true,
-        slidesNavigation: true
+        navigation: false,
+        slidesNavigation: true,
+        resize:true
       });
 
       $('#showExamples').click(function(e){

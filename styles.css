@@ -11,7 +11,7 @@
 header {
   position:fixed;
   z-index: 100;
-  width: 100%;
+  width: 100vw;
 }
 
 video {
@@ -21,6 +21,16 @@ video {
   width:auto;
   z-index: -100;
   overflow: hidden;
+}
+
+iframe {
+  height:75%;
+  width:75%;
+  z-index: 100;
+  overflow: hidden;
+  margin:auto;
+  background-color: #fff;
+  position:
 }
 
 h1, h2, h4, p {
@@ -39,7 +49,6 @@ h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 5vw;
   font-weight: bold;
-  width: 100%;
 }
 
 h3 {
@@ -67,19 +76,24 @@ a, i {
   text-decoration: none;
 }
 
+svg {
+  height:90vh;
+  width:90vw;
+}
+
 .logo {
   position: fixed;
-  left: 50px;
-  top: 50px;
+  left: 60px;
+  top: 60px;
 }
 
 .menu {
   position: fixed;
-  right: 50px;
-  top: 50px;
+  right: 125px;
+  top: 60px;
 }
 
-.logo h3:hover, .menu:hover {
+.logo h3:hover, .menu i:hover {
   text-shadow: 0 0 50px #a0ce4e;
   color: #a0ce4e;
 }
@@ -102,17 +116,79 @@ a, i {
   border: 3px solid #a0ce4e;
 }
 
+.view1-1 .titleblock {
+  top:20vh;
+}
+
+.view1-2 {
+  background-color: #888888;
+}
+
+.view1-2 .titleblock {
+  top:20vh;
+}
+
 .view2 {
   background-image: url("https://images.unsplash.com/photo-1414058862086-136de6c98e99?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8901f209c9657510d09fd9f7239d5d23");
 }
+
+.view2 .titleblock {
+  top: 15vh;
+}
+
+.view2 .titleblock p {
+  margin:2vh;
+}
+
 
 .view3 {
   background-image: url("https://images.unsplash.com/photo-1452482803948-4d97b623b3c4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-position: center;
 }
 
+.view3 .titleblock {
+  top: 15vh;
+  right: 15vw;
+}
+
+.view3 .titleblock p {
+  margin-top: 5vh;
+}
+
+.view4-1 .titleblock {
+  top: 30vh;
+}
+
+.view4-2 {
+  background-color:#888888;
+}
+
+.view4-2 .titleblock {
+  top: 1vh;
+}
+
+.view4-2 iframe {
+  margin-top: 15vh;
+}
+
+.view4-3 {
+  background-color:#bddde0;
+}
+
+.view4-3 .titleblock {
+  top: 1vh;
+}
+
+.view4-3 iframe {
+  margin-top: 15vh;
+}
+
 .view5 {
   background-image: url("https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=3f3d31febf99c200b8716d48244a6a1a");
+}
+
+.view5 .titleblock p {
+  margin-top: 5vh;
 }
 
 footer {
@@ -127,8 +203,4 @@ footer {
 
 .view5 h4 {
   padding: 30px;
-
-.fp-slidesNav ul li, .fp-nav ul li{
-  width: 20px;
-  height: 20px;
 }
