@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<!-- original -->
+  <head>
+    <title>Nick Marucci</title>
+    <link href='https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css' rel='stylesheet'
+     type='text/css'>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="about.html">
+          <h3>Marucci</h3>
+        </a>
+      </div>
+      <div class="menu">
+        <i class="fa fa-bars fa-4x"></i>
+      </div>
+    </header>
+    <div id="fullpage">
+
+      <div class="section" data-anchor="view1">
+        <div class="slide">
+          <div class="view1-1">
+            <div class="titleblock">
+              <h1>Let's</h1>
+              <p>EXPLORE THE LIFE AND SKILLS OF NICK MARUCCI</p>
+              <h1>Adventure</h1>
+              <i class="fa fa-arrows fa-2x"></i>
+              <h4>Use directional keys or scroll<br> to navigate through page.</h4>
+            </div>
+            <video class="video1-1" src="videos/GP022336.MP4" autoplay muted loop>
+            </video>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="view1-2">
+            <div class="titleblock">
+              <h2>Creativity is the magic that breeds innovation</h2>
+              <p>Taking ideas to the next level through strategic design and detailing<br>
+              <a href="artStuff.html">Art Stuff</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="view2">
+        <div class="slide">
+          <div class="view2">
+            <div class="titleblock">
+              <h2>Creativity is the magic that breeds innovation</h2>
+              <p>Taking ideas to the next level through strategic design and detailing<br>
+              <a href="artStuff.html">Art Stuff</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="view3">
+        <div class="slide">
+          <div class="view3">
+            <div class="titleblock">
+              <h2>Thought<br> Provoking<br>Ideas</h2>
+              <p><a href="buildStuff">Build Stuff</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" data anchor="view4">
+        <div class="slide">
+          <div class="view4-1">
+            <div class="titleblock">
+              <h2>Look what I can do!</h2>
+              <p>Here are some projects I've been working on.</p>
+            </div>
+            <video class="video4" src="videos/GOPR2344.MP4" autoplay muted loop>
+            </video>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="view4-2">
+            <div class="titleblock">
+              <h2>Thought<br> Provoking<br>Ideas</h2>
+              <p><a href="buildStuff">Build Stuff</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="view4-3">
+            <div class="titleblock">
+              <h2>Thought<br> Provoking<br>Ideas</h2>
+              <p><a href="buildStuff">Build Stuff</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="view5">
+        <div class="slide">
+          <div class="view5">
+            <div class="titleblock">
+              <h2>I Create Magic!</h2>
+              <p>Trust me. I'm an engineer.<br>
+                <a href="#">About Me</a>
+              </p>
+            </div>
+            <footer>
+              <h4>All rights reserved. www.nickmarucci.com Copyright 2016</h4>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['view1', 'view2', 'view3', 'view4', 'view5'],
+        menu: '#menu',
+        css3: true,
+        scrollingSpeed: 1000,
+        lockAnchors: false,
+        navigation: true,
+        slidesNavigation: true
+      });
+
+      $('#showExamples').click(function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $('#examplesList').toggle();
+      });
+
+      $('html').click(function(){
+        $('#examplesList').hide();
+      });
+  });
+    </script>
+  </body>
+
+<html>

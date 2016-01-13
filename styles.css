@@ -1,0 +1,134 @@
+.slide, .view1-1, .view1-2, .view2, .view3, .view4-1, .view4-2, .view4-3, .view5 {
+  width:100vw;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  position:fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+video {
+  min-width:100%;
+  min-height:100%;
+  height:auto;
+  width:auto;
+  z-index: -100;
+  overflow: hidden;
+}
+
+h1, h2, h4, p {
+  margin: 0;
+  color: #fff;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 12vh;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5vw;
+  font-weight: bold;
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Yesteryear', cursive;
+  font-size: 60px;
+  margin: 0;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1vw;
+  font-family: sans-serif;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3vw;
+  color:#e5e6eb;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+}
+
+a, i {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+}
+
+.menu {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+}
+
+.logo h3:hover, .menu:hover {
+  text-shadow: 0 0 50px #a0ce4e;
+  color: #a0ce4e;
+}
+
+.titleblock {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  z-index: 100;
+}
+
+.titleblock a {
+  border: 3px solid #fff;
+  padding: 0px 15px;
+}
+
+.titleblock a:hover {
+  box-shadow: 0 0 50px #a0ce4e;
+  color: #a0ce4e;
+  border: 3px solid #a0ce4e;
+}
+
+.view2 {
+  background-image: url("https://images.unsplash.com/photo-1414058862086-136de6c98e99?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8901f209c9657510d09fd9f7239d5d23");
+}
+
+.view3 {
+  background-image: url("https://images.unsplash.com/photo-1452482803948-4d97b623b3c4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-position: center;
+}
+
+.view5 {
+  background-image: url("https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=3f3d31febf99c200b8716d48244a6a1a");
+}
+
+footer {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100px;
+  color: #fff;
+  top: 90vh;
+  background-color: #000;
+}
+
+.view5 h4 {
+  padding: 30px;
+
+.fp-slidesNav ul li, .fp-nav ul li{
+  width: 20px;
+  height: 20px;
+}
