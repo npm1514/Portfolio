@@ -14,111 +14,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <a href="about.html">
-          <h3>Marucci</h3>
-        </a>
-      </div>
-      <div class="menu">
-        <i class="fa fa-bars fa-4x"></i>
-      </div>
-    </header>
-    <div id="fullpage">
+  <body ng-app="portfolio" ng-controller="includer">
+    <div ng-include="'pages/header.html'"></div>
 
+    <div id="fullpage">
       <div class="section" data-anchor="view1">
-        <div class="slide">
-          <div class="view1-1">
-            <div class="titleblock">
-              <h1>Let's</h1>
-              <p>EXPLORE THE LIFE AND SKILLS OF NICK MARUCCI</p>
-              <h1>Adventure</h1>
-              <i class="fa fa-arrows fa-2x"></i>
-              <h4>Use directional keys or scroll<br> to navigate through page.</h4>
-            </div>
-            <video class="video1-1" src="videos/GP022336.MP4" autoplay muted loop>
-            </video>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="view1-2">
-            <div class="titleblock">
-              <h2>This is where my routed about/art/build/contact pages will go.</h2>
-            </div>
-          </div>
-        </div>
+        <div ng-include="'pages/view1.html'"></div>
       </div>
 
       <div class="section" data-anchor="view2">
         <div class="slide">
-          <div class="view2">
-            <div class="titleblock">
-              <h2>Creativity is the magic that breeds innovation</h2>
-              <p>Taking ideas to the next level through strategic design and detailing<br><br>
-              <a href="artStuff.html">I Art Stuff</a></p>
-            </div>
-          </div>
+          <div ng-include="'pages/view2.html'"></div>
         </div>
       </div>
 
       <div class="section" data-anchor="view3">
         <div class="slide">
-          <div class="view3">
-            <div class="titleblock">
-              <h2>Thought<br> Provoking<br>Ideas</h2>
-              <p><a href="buildStuff">I Build Stuff</a></p>
-            </div>
-          </div>
+          <div ng-include="'pages/view3.html'"></div>
         </div>
       </div>
 
       <div class="section" data anchor="view4">
         <div class="slide">
-          <div class="view4-1">
-            <div class="titleblock">
-              <h2>Look what I can do!</h2>
-              <p>Scroll right to see some projects that I've been working on.</p>
-            </div>
-            <video class="video4" src="videos/GOPR2344.MP4" autoplay muted loop>
-            </video>
-          </div>
+          <div ng-include="'pages/view4-1.html'"></div>
         </div>
         <div class="slide">
-          <div class="view4-2">
-            <div class="titleblock">
-              <h2><a href="http://www.sol-innovations.com" target="_blank">SoL Innovations Website</a></h2>
-            </div>
-            <iframe src="http://www.sol-innovations.com">
-            </iframe>
-          </div>
+          <div ng-include="'pages/view4-2.html'"></div>
         </div>
 
         <div class="slide">
-          <div class="view4-3">
-            <div class="titleblock">
-              <h2><a href="http://www.pierce-auto.com" target="_blank">Pierce Auto Restoration</a></h2>
-            </div>
-            <iframe src="http://www.pierce-auto.com">
-            </iframe>
-          </div>
+          <div ng-include="'pages/view4-3.html'"></div>
         </div>
       </div>
 
       <div class="section" data-anchor="view5">
         <div class="slide">
-          <div class="view5">
-            <div class="titleblock">
-              <h2>I Create Magic!</h2>
-              <p>Trust me. I'm an engineer.
-              </p>
-              <p><a href="#">About Me</a>
-              </p>
-            </div>
-            <footer>
-              <h4>All rights reserved. www.nickmarucci.com Copyright 2016</h4>
-            </footer>
-          </div>
+          <div ng-include="'pages/view5.html'"></div>
         </div>
       </div>
 
@@ -128,30 +59,8 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['view1', 'view2', 'view3', 'view4', 'view5'],
-        menu: '#menu',
-        css3: true,
-        scrollingSpeed: 1000,
-        lockAnchors: false,
-        navigation: false,
-        slidesNavigation: true,
-        resize:true
-      });
-
-      $('#showExamples').click(function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        $('#examplesList').toggle();
-      });
-
-      $('html').click(function(){
-        $('#examplesList').hide();
-      });
-  });
-    </script>
+    <script src="app.js"></script>
+    <script src="controller/includer.js" charset="utf-8"></script>
   </body>
 
 <html>

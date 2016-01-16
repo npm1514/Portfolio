@@ -1,11 +1,12 @@
-.slide, .view1-1, .view1-2, .view2, .view3, .view4-1, .view4-2, .view4-3, .view5 {
-  width:100vw;
-  height:100vh;
+.slide, .view1, .view1, .view2, .view3, .view4-1, .view4-2, .view4-3, .view5 {
+  min-width: 100vw;
+  min-height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
 }
 
 header {
@@ -15,86 +16,89 @@ header {
 }
 
 video {
+
   min-width:100%;
   min-height:100%;
-  height:auto;
+  height: auto;
   width:auto;
   z-index: -100;
   overflow: hidden;
 }
 
 iframe {
-  height:75%;
-  width:75%;
+  height:75vh;
+  width:75vw;
   z-index: 100;
   overflow: hidden;
   margin:auto;
   background-color: #fff;
-  position:
 }
 
 h1, h2, h4, p {
   margin: 0;
   color: #fff;
   width: 100vw;
+  text-shadow: 2px 2px 2px #000;
 }
 
 h1 {
   font-family: 'Homemade Apple', cursive;
-  font-size: 12vh;
-  text-shadow: 2px 2px 2px #000;
+  font-size: 12vmin;
 }
 
 h2 {
   font-family: 'Amatic SC', cursive;
-  font-size: 5vw;
+  font-size: 10vmin;
   font-weight: bold;
 }
 
 h3 {
   font-family: 'Yesteryear', cursive;
-  font-size: 60px;
+  font-size: 4vmin;
   margin: 0;
   color: #fff;
+  text-shadow: 2px 2px 2px #000;
 }
 
 h4 {
-  font-size: 1vw;
+  font-size: 1vmin;
   font-family: sans-serif;
+  text-shadow: 2px 2px 1px #000;
 }
 
 p {
   font-family: 'Amatic SC', cursive;
-  font-size: 3vw;
+  font-size: 5vmin;
   color:#e5e6eb;
   font-weight: bold;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
   text-shadow: 2px 2px 2px #000;
 }
 
-a, i {
+i {
   color: #fff;
   text-decoration: none;
-}
-
-svg {
-  height:90vh;
-  width:90vw;
+  font-size: 3.5vmin;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .logo {
   position: fixed;
-  left: 60px;
-  top: 60px;
+  left: 2vw;
+  top: 2vh;
 }
 
 .menu {
   position: fixed;
-  right: 125px;
-  top: 60px;
+  right: 3vw;
+  top: 2.5vh;
 }
 
 .logo h3:hover, .menu i:hover {
-  text-shadow: 0 0 50px #a0ce4e;
   color: #a0ce4e;
 }
 
@@ -108,6 +112,7 @@ svg {
 .titleblock a {
   border: 3px solid #fff;
   padding: 0px 15px;
+  box-shadow: 2px 2px 1px #000;
 }
 
 .titleblock a:hover {
@@ -116,58 +121,37 @@ svg {
   border: 3px solid #a0ce4e;
 }
 
-.view1-1 .titleblock {
-  top:20vh;
+.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4-1 .titleblock,.view5 .titleblock {
+  top:15vh;
 }
 
-.view1-2 {
-  background-color: #888888;
+.view2 .titleblock p, .view3 .titleblock p, .view4-1 .titleblock p, .view5 .titleblock p {
+  margin-top:2vh;
 }
 
-.view1-2 .titleblock {
-  top:20vh;
+.view1 video{
+  z-index: -100;
 }
 
 .view2 {
   background-image: url("https://images.unsplash.com/photo-1414058862086-136de6c98e99?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8901f209c9657510d09fd9f7239d5d23");
+  z-index: 0;
 }
 
-.view2 .titleblock {
-  top: 15vh;
-}
-
-.view2 .titleblock p {
-  margin:2vh;
-}
-
-
-.view3 {
+.view4-1 {
   background-image: url("https://images.unsplash.com/photo-1452482803948-4d97b623b3c4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-position: center;
 }
 
-.view3 .titleblock {
-  top: 15vh;
-  right: 15vw;
-}
-
-.view3 .titleblock p {
-  margin-top: 5vh;
-}
-
-.view4-1 .titleblock {
-  top: 30vh;
-}
-
 .view4-2 {
-  background-color:#888888;
+  background-color:#f9e9dd;
 }
 
-.view4-2 .titleblock {
+.view4-2 .titleblock, .view4-3 .titleblock {
   top: 1vh;
 }
 
-.view4-2 iframe {
+.view4-2 iframe, .view4-3 iframe {
   margin-top: 15vh;
 }
 
@@ -175,32 +159,20 @@ svg {
   background-color:#bddde0;
 }
 
-.view4-3 .titleblock {
-  top: 1vh;
-}
-
-.view4-3 iframe {
-  margin-top: 15vh;
-}
-
 .view5 {
   background-image: url("https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=3f3d31febf99c200b8716d48244a6a1a");
 }
 
-.view5 .titleblock p {
-  margin-top: 5vh;
+.view5 h4 {
+  padding-top: 4vh;
 }
 
 footer {
   position: absolute;
   z-index: 100;
   width: 100vw;
-  height: 100px;
+  height: 10vh;
   color: #fff;
-  top: 90vh;
+  bottom: 0vh;
   background-color: #000;
-}
-
-.view5 h4 {
-  padding: 30px;
 }
