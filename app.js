@@ -21,6 +21,13 @@ $(document).ready(function() {
   $('html').click(function(){
     $('#examplesList').hide();
   });
+
+  $('.menuopen').hide();
+
+  $('.menu').on('click', (function(){
+    $('i').hide();
+    $('.menuopen').show();
+  }));
 });
 
 app.config(function($urlRouterProvider, $stateProvider) {

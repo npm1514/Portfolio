@@ -92,13 +92,13 @@ i {
   top: 2vh;
 }
 
-.menu {
+.menu, .menuopen {
   position: fixed;
   right: 3vw;
   top: 2.5vh;
 }
 
-.logo h3:hover, .menu i:hover {
+.logo h3:hover, .menu i:hover, .menuopen h3:hover {
   color: #a0ce4e;
 }
 

@@ -1,0 +1,114 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+  height: 1000px;
+}
+
+.head {
+  width:100%;
+  height: 10vh;
+  background-color: transparent;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+
+li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 1.5%;
+  width: 17%;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  color: #000;
+}
+
+h3 {
+  font-family: "Yesteryear",cursive;
+  font-size: 50px;
+}
+
+h4 {
+  font-family: Times ,cursive;
+  font-size: 3vmin;
+  font-weight: normal;
+  text-align: center;
+}
+
+.split {
+  border-top: 1px solid #888888;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin: 2%;
+  font-size: 4vmin;
+  font-family: Times, cursive;
+}
+
+.headtitle {
+  width: 970px;
+  margin: auto;
+  font-family: "Oswald";
+}
+.logodiv {
+  height: 72px;
+  width: 70px;
+  float: left;
+}
+.logoimage {
+  height: 95%;
+  margin: auto;
+}
+.sol {
+  font-size: 24px;
+  line-height: 1.5;
+}
+#sol-style, .bannertext p, .lefttext p, .lefttext h3, .lefttext li, .quote-form p, {
+  color: #5C5C5C;
+}
+
+.lefttext a:hover, .contact-button:hover, .hofert h3:hover {
+  background-color: #5C5C5C;
+}
+.nav {
+  width: 860px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.navwrap {
+  width: 860px;
+  margin: 0 auto;
+  height: 45px;
+}
+.navwrap a {
+  color: #2e2e2e;
+}
+.navlink {
+  width: 160px;
+  height: 40px;
+  margin: 0px 5px 6px 5px;
+  float: left;
+}
+.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2, .thanks h1, .emailResponse h1 {
+  color: #a0ce4e;
+}
+
+.navlink p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 100%;
+}
