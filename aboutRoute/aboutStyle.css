@@ -9,8 +9,6 @@ h1, h2, h3, h4, p, ul {
 }
 
 h1 {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   font-size: 60px;
   font-family: "Montserrat";
   color: #cf0000;
@@ -146,10 +144,16 @@ p {
   height: 100%;
 }
 
-.leftbanner h1 {
-  margin: auto;
+.lefttext {
+  height: 75%;
   padding-top: 40px;
-  height: 800px;
+}
+
+.leftbanner h1 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
   text-shadow: 1px 1px 2px #000;
 }
 
