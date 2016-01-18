@@ -5,11 +5,17 @@ $(document).ready(function() {
     anchors: ['view1', 'view2', 'view3', 'view4', 'view5'],
     menu: '#menu',
     css3: true,
+    fitToSection: true,
+    loopHorizontal: false,
     scrollingSpeed: 1000,
-    lockAnchors: false,
+    setLockAnchors: false,
     navigation: false,
     slidesNavigation: true,
     resize:true
+  });
+
+  $(document).on('click', '#moveTo', function(){
+    $.fn.fullpage.moveTo('view1', 0);
   });
 
   $('#showExamples').click(function(e){
