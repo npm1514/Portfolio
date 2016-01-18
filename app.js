@@ -25,8 +25,8 @@ $(document).ready(function() {
   $('.menuopen').hide();
 
   $('.menu').on('click', (function(){
-    $('i').hide();
-    $('.menuopen').show();
+    $('.menuopen').slideToggle();
+
   }));
 });
 
@@ -34,7 +34,7 @@ app.config(function($urlRouterProvider, $stateProvider) {
     $stateProvider
     .state('about', {
       url: '/about',
-      templateUrl: 'templates/about.html'
+      templateUrl: 'templates/aboutHome.html'
     })
     .state("artStuff", {
       url: "/artStuff",
@@ -53,5 +53,5 @@ app.config(function($urlRouterProvider, $stateProvider) {
       templateUrl: "templates/contact.html"
     });
     $urlRouterProvider
-      .otherwise('/');
+      .otherwise('/about');
 });

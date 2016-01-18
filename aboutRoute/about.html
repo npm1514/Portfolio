@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="aboutApp">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <header>
 		<div class="headtitle">
 			<div class="logodiv">
-				<a href="index.html" class="logolink">
+				<a href="../index.html" class="logolink">
 					<img class="logoimage" src="images/SoL-Logo.png">
 				</a>
 			</div>
@@ -23,27 +23,27 @@
 		</div>
 		<div class="nav" >
 			<div class="navwrap">
-				<a class="nav1" ui-sref="Home">
+				<a class="nav1" ui-sref="about">
 					<div class="navlink">
 						<p nav-dir>ABOUT</p>
 					</div>
 				</a>
-				<a class="nav2" ui-sref="About">
+				<a class="nav2" ui-sref="artStuff">
 					<div class="navlink">
 						<p  nav-dir>ART</p>
 					</div>
 				</a>
-				<a class="nav3" ui-sref="Services" style="nav-dir">
+				<a class="nav3" ui-sref="buildStuff" style="nav-dir">
 					<div class="navlink">
 						<p>BUILD</p>
 					</div>
 				</a>
-				<a class="nav4" ui-sref="Quotation" style="nav-dir">
+				<a class="nav4" ui-sref="resume" style="nav-dir">
 					<div class="navlink">
 						<p>RESUME</p>
 					</div>
 				</a>
-				<a class="nav5" ui-sref="Contact" style="nav-dir">
+				<a class="nav5" ui-sref="contact" style="nav-dir">
 					<div class="navlink">
 						<p>CONTACT</p>
 					</div>
@@ -56,10 +56,16 @@
   <div class="split">
   </div>
 
-  <ui-view>
-    <p>^^My directory will be a cool animated slider with the link buttons attached.</p>
-    <p>I am in the process of creating these pages and linking them. I will use ui-router to do so.</p>
-    <p>This is where I will place my routed content and I also plan on making a footer below.</p></ui-view>
+  <ui-view></ui-view>
+
+  <footer>
+    <div class="foot">
+      <h4>All rights reserved. www.nickmarucci.com Copyright 2016</h4>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="aboutApp.js"></script>
 </body>
 
 </html>

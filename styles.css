@@ -54,7 +54,7 @@ h2 {
 
 h3 {
   font-family: 'Yesteryear', cursive;
-  font-size: 4vmin;
+  font-size: 40px ;
   margin: 0;
   color: #fff;
   text-shadow: 2px 2px 2px #000;
@@ -88,18 +88,49 @@ i {
 
 .logo {
   position: fixed;
-  left: 2vw;
-  top: 2vh;
+  left: 50px;
+  top: 50px;
 }
 
-.menu, .menuopen {
+.menu {
   position: fixed;
-  right: 3vw;
-  top: 2.5vh;
+  right: 100px;
+  top: 50px;
+}
+
+.menuopen {
+  position: fixed;
+  text-align: right;
+  top: 110px;
+  right: 96px;
+
+}
+
+.menuopen ul {
+  width:200px;
+  margin:0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.menuopen li {
+  list-style-type: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: #888888;
+  opacity: .8;
+}
+
+.menuopen h3 {
+  padding: 5px 8px;
 }
 
 .logo h3:hover, .menu i:hover, .menuopen h3:hover {
   color: #a0ce4e;
+}
+
+.menuopen li:hover {
+  opacity: 1;
 }
 
 .titleblock {
@@ -122,7 +153,7 @@ i {
 }
 
 .view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4-1 .titleblock,.view5 .titleblock {
-  top:15vh;
+  top:10vh;
 }
 
 .view2 .titleblock p, .view3 .titleblock p, .view4-1 .titleblock p, .view5 .titleblock p {
@@ -134,12 +165,12 @@ i {
 }
 
 .view2 {
-  background-image: url("https://images.unsplash.com/photo-1414058862086-136de6c98e99?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8901f209c9657510d09fd9f7239d5d23");
+  background-image: url("https://images.unsplash.com/photo-1444460381791-02e0621c12f4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   z-index: 0;
 }
 
 .view4-1 {
-  background-image: url("https://images.unsplash.com/photo-1452482803948-4d97b623b3c4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-image: url("https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-position: center;
 }
 
@@ -175,4 +206,10 @@ footer {
   color: #fff;
   bottom: 0vh;
   background-color: #000;
+}
+
+span {
+  font-family: "Amatic SC";
+  font-size: 50px;
+  font-weight: bold;
 }

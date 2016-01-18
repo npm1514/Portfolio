@@ -1,0 +1,40 @@
+<style media="screen">
+  .nav5 p{
+    color: #cf0000;
+  }
+</style>
+
+<div class="containercontact">
+  <div class="leftside">
+    <div class="leftbanner">
+      <h1>CONTACT ME</h1>
+    </div>
+  </div>
+  <div class="rightside">
+    <div class="rightpic">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUtDW2kgUk1rCKcVwjQKecQIh7NwsTz-M&q=491 S Freedom Blvd, Provo, UT, United States&zoom=11" width="100%" height="100%"></iframe>
+    </div>
+    <div class="righttext">
+      <h2>Get in contact with me.</h2>
+      <p>Nick Marucci</p>
+      <p>491 South Freedom Blvd</p>
+      <p>Provo, UT 84601</p>
+      <p>ph: (716) 450-2362</p>
+      <p>em: npmarucci@sol-innovations.com</p>
+      <h2>Send me a message.</h2>
+      <div class="quote-form" ng-controller="emailCtrl">
+				<form ng-controller="emailCtrl">
+					<p>Name</p>
+					<input type="text" name="name" required placeholder="What's your name?" ng-model="name">
+					<p>E-mail</p>
+					<input type="email" name="email" required placeholder="What's your email address?" ng-model="email">
+					<p>Message</p>
+					<textarea type="text" required placeholder="How can I be of assistance?" ng-model="message"></textarea>
+					<br>
+					<button type="button" name="button" ng-click="sendEmail(name, email, message)">Submit</button>
+					<email-dir responseMessage="responseMessage"></email-dir>
+				</form>
+			</div>
+    </div>
+  </div>
+</div>
