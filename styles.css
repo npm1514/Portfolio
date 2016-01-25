@@ -61,9 +61,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1vmin;
+  font-size: 20px;
   font-family: sans-serif;
   text-shadow: 2px 2px 1px #000;
+}
+
+h5 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
 }
 
 p {
@@ -82,28 +87,25 @@ a{
 i {
   color: #fff;
   text-decoration: none;
-  font-size: 3.5vmin;
+  font-size: 40px;
   text-shadow: 2px 2px 2px #000;
 }
 
 .logo {
-  position: fixed;
-  left: 50px;
-  top: 50px;
+  float: left;
+  margin: 25px;
 }
 
 .menu {
-  position: fixed;
-  right: 100px;
-  top: 50px;
+  float: right;
+  font-size: 40px;
+  margin: 25px;
 }
 
 .menuopen {
-  position: fixed;
+  float: right;
   text-align: right;
-  top: 110px;
-  right: 96px;
-
+  margin: 25px;
 }
 
 .menuopen ul {
@@ -121,11 +123,12 @@ i {
   opacity: .8;
 }
 
-.menuopen h3 {
+.menuopen h5 {
   padding: 5px 8px;
+  margin: 0;
 }
 
-.logo h3:hover, .menu i:hover, .menuopen h3:hover {
+.logo h3:hover, .menu i:hover, .menuopen h5:hover {
   color: #a0ce4e;
 }
 
@@ -153,7 +156,7 @@ i {
 }
 
 .view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4-1 .titleblock,.view5 .titleblock {
-  top:10vh;
+  top:100px;
 }
 
 .view2 .titleblock p, .view3 .titleblock p, .view4-1 .titleblock p, .view5 .titleblock p {
@@ -183,7 +186,7 @@ i {
 }
 
 .view4-2 iframe, .view4-3 iframe {
-  margin-top: 15vh;
+  margin-top: 100px;
 }
 
 .view4-3 {
@@ -195,14 +198,14 @@ i {
 }
 
 .view5 h4 {
-  padding-top: 4vh;
+  padding-top: 25px;
 }
 
 footer {
   position: absolute;
   z-index: 100;
   width: 100vw;
-  height: 10vh;
+  height: 70px;
   color: #fff;
   bottom: 0vh;
   background-color: #000;
@@ -212,4 +215,26 @@ span {
   font-family: "Amatic SC";
   font-size: 50px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 550px) {
+
+  footer {
+    height: 95px;
+  }
+  .view4-2 .titleblock, .view4-3 .titleblock {
+    margin-top: 100px;
+  }
+  iframe {
+    height:50vh;
+  }
+  .view4-2 iframe, .view4-3 iframe {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  footer {
+    height: 115px;
+  }
 }
