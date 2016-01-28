@@ -77,6 +77,6 @@ app.service("emailServ", function($http) {
 $(document).ready(function() {
 
   $('i').on('click', (function(){
-    $('.navwrap').show();
+    $('.navwrap').slideToggle();
   }));
 });
