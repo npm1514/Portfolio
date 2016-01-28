@@ -73,7 +73,7 @@ i {
   text-align: center;
   float: right;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .nav {
@@ -86,6 +86,7 @@ i {
 .navwrap {
   max-width: 760px;
   margin: 0 auto;
+  display: none;
 }
 
 .navlink {
