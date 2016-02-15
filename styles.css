@@ -187,7 +187,7 @@ i {
 }
 
 .view4-2 iframe, .view4-3 iframe {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .view4-3 {
@@ -218,15 +218,15 @@ span {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 900px) {
   .view4-2 .titleblock, .view4-3 .titleblock {
     margin-top: 100px;
   }
   iframe {
-    height:50vh;
+    height:60vh;
   }
   .view4-2 iframe, .view4-3 iframe {
-    margin-top: 200px;
+    margin-top: 250px;
   }
 }
 
@@ -239,5 +239,41 @@ span {
 @media only screen and (max-width: 365px) {
   footer {
     height: 115px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  iframe {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  iframe {
+    height: 65vh;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  iframe {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  iframe {
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  iframe {
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-height: 300px) {
+  iframe {
+    height: 10vh;
   }
 }
