@@ -168,13 +168,18 @@ i {
   z-index: -100;
 }
 
+.view1 {
+  background-image: url("images/skishot.PNG");
+  z-index: 0;
+}
+
 .view2 {
-  background-image: url("https://images.unsplash.com/photo-1444460381791-02e0621c12f4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-image: url("images/paintbrush.jpg");
   z-index: 0;
 }
 
 .view4-1 {
-  background-image: url("https://images.unsplash.com/reserve/6HJtLkJSDqjqlE2NipEu_macbook.jpg?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-image: url("images/macbook.jpg");
   background-position: center;
 }
 
@@ -195,7 +200,7 @@ i {
 }
 
 .view5 {
-  background-image: url("https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=3f3d31febf99c200b8716d48244a6a1a");
+  background-image: url("images/airport.jpg");
 }
 
 .view5 h4 {
