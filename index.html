@@ -11,9 +11,10 @@
     <meta property="og:image" content="./aboutRoute/images/SoL-Logo.png">
     <meta property="og:url" content="http://www.nickmarucci.com">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href='./jquery.fullPage.css' rel='stylesheet'
+    <link href='./plugins/jquery.fullPage.css' rel='stylesheet'
      type='text/css'>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
     <header>
       <div class="logo">
         <a href="" id="moveTo">
-          <h3>Marucci</h3>
+          <h3>NM</h3>
         </a>
       </div>
       <div class="menu">
@@ -33,11 +34,11 @@
       </div>
       <div class="menuopen">
         <ul>
-          <li><a href="./aboutRoute/about.html"><h5>About Me</h5></a></li>
-          <li><a href="./aboutRoute/about.html#/artStuff"><h5>Art Work</h5></a></li>
-          <li><a href="./aboutRoute/about.html#/buildStuff"><h5>Build Work</h5></a></li>
-          <li><a href="./aboutRoute/about.html#/resume"><h5>My Resume</h5></a></li>
-          <li><a href="./aboutRoute/about.html#/contact"><h5>Contact Me</h5></a></li>
+          <li><a href="./aboutRoute/about.html"><h5>ABOUT ME</h5></a></li>
+          <li><a href="./aboutRoute/about.html#/artStuff"><h5>ART WORK</h5></a></li>
+          <li><a href="./aboutRoute/about.html#/buildStuff"><h5>BUILD WORK</h5></a></li>
+          <li><a href="./aboutRoute/about.html#/resume"><h5>MY RESUME</h5></a></li>
+          <li><a href="./aboutRoute/about.html#/contact"><h5>CONTACT ME</h5></a></li>
         </ul>
       </div>
     </header>
@@ -54,11 +55,6 @@
         </div>
       </div>
 
-      <div class="section" data-anchor="view3">
-        <div class="slide">
-          <div ng-include="'pages/view3.html'"></div>
-        </div>
-      </div>
 
       <div class="section" data anchor="view4">
         <div class="slide">
@@ -73,6 +69,12 @@
         </div>
       </div>
 
+      <!-- <div class="section" data-anchor="view3">
+        <div class="slide">
+          <div ng-include="'pages/view3.html'"></div>
+        </div>
+      </div> -->
+
       <div class="section" data-anchor="view5">
         <div class="slide">
           <div ng-include="'pages/view5.html'"></div>
@@ -84,9 +86,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./jquery.fullPage.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="./plugins/jquery.fullPage.js"></script>
     <script src="./app.js"></script>
     <script src="./controller/includer.js" charset="utf-8"></script>
+    <script src="./controller/splatCtrl.js" charset="utf-8"></script>
   </body>
 
 <html>

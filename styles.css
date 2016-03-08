@@ -1,6 +1,6 @@
 .slide, .view1, .view1, .view2, .view3, .view4-1, .view4-2, .view4-3, .view5 {
   min-width: 100vw;
-  min-height:100vh;
+  min-height:110vh;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -26,7 +26,7 @@ video {
 }
 
 iframe {
-  height:75vh;
+  height:70vh;
   width:75vw;
   z-index: 100;
   overflow: hidden;
@@ -34,66 +34,82 @@ iframe {
   background-color: #fff;
 }
 
-h1, h2, h4, p {
+h1, h2, h4,  p {
   margin: 0;
-  color: #fff;
+  color: #5a5255;
+  font-family: 'Oswald', sans-serif;
   width: 100vw;
-  text-shadow: 2px 2px 2px #000;
 }
 
 h1 {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 12vmin;
+  font-size: 120px;
+  margin: auto;
+  margin-top: 32vh;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 6px;
+  color: #5a5255;
+  font-weight: 300;
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 10vmin;
-  font-weight: bold;
+  font-size: 120px;
+  margin: auto;
+  margin-top: 12vh;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 6px;
+  color: #5a5255;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 h3 {
   font-family: 'Yesteryear', cursive;
   font-size: 40px ;
   margin: 0;
-  color: #fff;
-  text-shadow: 2px 2px 2px #000;
+  color: #5a5255;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 h4 {
   font-size: 20px;
   font-family: sans-serif;
-  text-shadow: 2px 2px 1px #000;
+
 }
 
 h5 {
-  font-family: 'Amatic SC', cursive;
   font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+
 }
 
 p {
-  font-family: 'Amatic SC', cursive;
-  font-size: 5vmin;
-  color:#e5e6eb;
+  font-size: 50px;
+  color:#5a5255;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 a{
-  color: #fff;
+  color: #5a5255;
   text-decoration: none;
-  text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
 }
 
 i {
   color: #fff;
   text-decoration: none;
-  font-size: 40px;
   text-shadow: 2px 2px 2px #000;
 }
 
 .logo {
   float: left;
   margin: 25px;
+  border: 2px solid #fff;
+  padding: 5px 8px 0 10px;
+  box-shadow: 0 0 10px #000;
 }
 
 .menu {
@@ -109,11 +125,16 @@ i {
   z-index: 100;
 }
 
+.menuopen ul li a h5 {
+  color:#fff;
+}
+
 .menuopen ul {
-  width:200px;
+  width:250px;
   margin:0;
   padding: 0;
   border-radius: 5px;
+
 }
 
 .menuopen li {
@@ -122,6 +143,7 @@ i {
   border-radius: 2px;
   background-color: #888888;
   opacity: .8;
+
 }
 
 .menuopen h5 {
@@ -129,7 +151,11 @@ i {
   margin: 0;
 }
 
-.logo h3:hover, .menu i:hover, .menuopen h5:hover {
+.menu i:hover, .menuopen h5:hover {
+  color: #a0ce4e;
+}
+
+.logo h3:hover {
   color: #a0ce4e;
 }
 
@@ -160,22 +186,54 @@ i {
   top:100px;
 }
 
-.view2 .titleblock p, .view3 .titleblock p, .view4-1 .titleblock p, .view5 .titleblock p {
-  margin-top:2vh;
-}
-
-.view1 video{
-  z-index: -100;
-}
-
 .view1 {
-  background-image: url("images/skishot.PNG");
   z-index: 0;
+}
+
+.tri1 {
+  height: 500px;
+  width: 450px;
+  margin: auto;
+  fill:red;
+}
+
+.tri2 {
+  height: 500px;
+  width: 500px;
+  margin-left: -250px;
+  fill:purple;
+}
+
+.tri3 {
+  height: 800px;
+  width: 800px;
+  margin: auto;
+  fill:green;
+}
+
+.directions {
+  position: absolute;
+  top: 80vh;
 }
 
 .view2 {
-  background-image: url("images/paintbrush.jpg");
   z-index: 0;
+}
+
+splat {
+  position: absolute;
+  top:120px;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: -100;
+  height: 100vh;
+  width: 100%;
+}
+
+.splat {
+  position: absolute;
+  top: -80px;
 }
 
 .view4-1 {
@@ -192,7 +250,7 @@ i {
 }
 
 .view4-2 iframe, .view4-3 iframe {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .view4-3 {
@@ -201,6 +259,10 @@ i {
 
 .view5 {
   background-image: url("images/airport.jpg");
+}
+
+.view5 h2, .view5 h4, .view5 p, .view5 a {
+  color: #fff;
 }
 
 .view5 h4 {

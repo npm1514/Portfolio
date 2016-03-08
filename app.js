@@ -61,3 +61,10 @@ app.config(function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider
       .otherwise('/about');
 });
+
+app.directive('splat', function() {
+  return {
+    restrict: 'E',
+    controller: 'splatCtrl'
+  };
+});
