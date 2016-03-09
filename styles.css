@@ -1,12 +1,10 @@
 .slide, .view1, .view1, .view2, .view3, .view4, .view5, .view6 {
-  min-width: 100vw;
-  min-height:100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  height:100%;
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
+  background-color: transparent;
 }
 
 header {
@@ -14,24 +12,7 @@ header {
   width: 100%;
   height: 0;
   z-index: 1;
-}
-
-video {
-  min-width:100%;
-  min-height:100%;
-  height: auto;
-  width:auto;
-  z-index: -100;
-  overflow: hidden;
-}
-
-iframe {
-  height:70vh;
-  width:75vw;
-  z-index: 100;
-  overflow: hidden;
-  margin:auto;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 h1, h2, h4,  p {
@@ -44,7 +25,7 @@ h1, h2, h4,  p {
 h1 {
   font-size: 120px;
   margin: auto;
-  margin-top: 340px;
+  margin-top: 440px;
   text-align: center;
   width: 100%;
   letter-spacing: 6px;
@@ -55,7 +36,6 @@ h1 {
 h2 {
   font-size: 120px;
   margin: auto;
-  margin-top: 12vh;
   text-align: center;
   width: 100%;
   letter-spacing: 6px;
@@ -86,7 +66,7 @@ h5 {
 }
 
 p {
-  font-size: 50px;
+  font-size: 5vh;
   color:#5a5255;
   font-weight: bold;
   text-shadow: 1px 1px 1px #fff;
@@ -183,7 +163,7 @@ i {
 }
 
 .view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock {
-  top:100px;
+  top:0;
 }
 
 .view1 {
@@ -236,19 +216,38 @@ splat {
   top: -80px;
 }
 
-.view3 h2 {
-  margin-top: -100px;
+.view2 .titleblock p{
+  top: 15px;
 }
 
-.view4 {
-  background-position: center;
+.view2 .titleblock h2{
+  margin-top: 200px;
+}
+
+
+.proj {
+  border: 1px solid #000;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+}
+
+/*.titleblock .proj {
+  padding: 0;
+}*/
+
+.proj img{
+  width: 80vw;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .view5 {
 
 }
 
-.view6 h4 {
+.view7 h4 {
   padding-top: 25px;
   color: #fff;
 }
@@ -267,11 +266,20 @@ footer {
   font-weight: bold;
 }*/
 
-@media only screen and (max-width: 900px) {
-  iframe {
-    height:60vh;
+@media only screen and (max-width: 1550px) {
+  .projwrap {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .proj {
+    display: block;
+  }
+  .view4 .titleblock {
+    top:0;
   }
 }
+
 
 @media only screen and (max-width: 550px) {
   footer {
@@ -284,43 +292,6 @@ footer {
     height: 115px;
   }
 }
-
-@media only screen and (max-height: 800px) {
-  iframe {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-height: 700px) {
-  iframe {
-    height: 65vh;
-  }
-}
-
-@media only screen and (max-height: 600px) {
-  iframe {
-    height: 55vh;
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  iframe {
-    height: 45vh;
-  }
-}
-
-@media only screen and (max-height: 400px) {
-  iframe {
-    height: 35vh;
-  }
-}
-
-@media only screen and (max-height: 300px) {
-  iframe {
-    height: 10vh;
-  }
-}
-
 
 
 /***************************************/
@@ -337,10 +308,6 @@ footer {
   pointer-events:none;
 }
 
-.point {
-  opacity:.6;
-  stroke: red;
-}
 
 .flyin {
   stroke-width:1;
@@ -379,7 +346,7 @@ i {
   width: 30%;
   height: 860px;
   position: absolute;
-  top:0;
+  top:100px;
   right:0;
   margin: 4.5vh 0;
 }
@@ -389,8 +356,8 @@ i {
   float: right;
   margin: 2vh 0;
   background-color: lightblue;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .bars div p {
@@ -407,51 +374,19 @@ i {
   left: 10px;
   width: 880px;
   float: left;
-  z-index: -100;
-}
-
-.moreinfo {
-  position: absolute;
-  top: 0;
-  left:0;
-  right:0;
-  bottom:0;
-  margin: auto;
-  width: 400px;
-  height: max-content;
-  background-color: #5a5255;
-  opacity: .8;
-  border-radius: 5px;
-  border: 1px solid #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.infoexit {
-  position: absolute;
-  color: red;
-  top: 0;
-  right: 0;
-  margin: 30px;
-  cursor: pointer;
-  border-bottom: 2px solid red;
-  padding: 0 5px;
-}
-
-.infoexit:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  z-index: -10;
+  height: 100%;
 }
 
 .zoom {
   margin: 20px;
-  margin-top: 120px;
+  margin-top: 90px;
   text-align: left;
 }
 
 .scrollbar {
   position: absolute;
-  top: 60px;
+  top: 160px;
   left: 0px;
   width: 500px;
   height: 100px;
@@ -459,7 +394,17 @@ i {
   text-align: center;
 }
 
+@keyframes flash {
+  0% {
+    color: #a0ce4e;
+  }
+  100% {
+    color: #8d8d8d;
+  }
+}
+
 .timeplay {
+
   display: inline-block;
   width: max-content;
   text-align: left;
@@ -471,27 +416,10 @@ i {
 }
 
 .timeplay i {
-  margin: 20px;
-  color: #a0ce4e;
+  margin: 5px 5px;
+  color: #8d8d8d;
 }
 
-.timeplay i:hover {
-  color: #5a5255;
-}
-
-@media only screen and (max-width: 1200px) {
-  .bars {
-    position: absolute;
-    width: 100%;
-    margin-top: 900px;
-  }
-  svg {
-    float: left;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .moreinfo {
-    width: 80%;
-  }
+.fa-play {
+  animation: flash linear 1s infinite;
 }

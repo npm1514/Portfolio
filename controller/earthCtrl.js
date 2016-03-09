@@ -5,7 +5,7 @@ app.controller("earthCtrl", function($scope, $window, $interval, $rootScope ) {
   var linkcamp = [], //coordinates for from to camp
       linkjob  = [], //coordinates for camp to job
       arcLines = [], //coordinates for arc ashadows
-      scale    = window.screen.width / 4, //scale of earth
+      scale    = window.screen.width / 4.5, //scale of earth
       width    = window.screen.width, //earth svg width
       height   = window.screen.height; //earth svg height
 

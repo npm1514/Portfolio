@@ -51,7 +51,7 @@ var app = angular.module("portfolio", ['ui.router'])
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
-    anchors: ['view1', 'view2', 'view3', 'view4', 'view5'],
+    anchors: ['view1', 'view2', 'view3', 'view4', 'view5', 'view6', 'view7'],
     menu: '#menu',
     css3: true,
     fitToSection: true,

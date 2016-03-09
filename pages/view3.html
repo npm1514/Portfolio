@@ -5,15 +5,15 @@
     <div class="mapCont">
       <scrollbar class="scrollbar" cohortupdate='cohortupdate' viewdate="viewdate" play="play">
         <div class="timeplay">
-          <i class="fa fa-play fa-2x" ng-hide="playtime" ng-click="play(); playtime=true"></i>
-          <i class="fa fa-pause fa-2x" ng-show="playtime" ng-click="play(); playtime=false"></i>
-          <p>{{viewdate}}</p>
+          <p>
+            <i class="fa fa-play" ng-hide="playtime" ng-click="play(); playtime=true"></i>
+            <i class="fa fa-pause fa-2x" ng-show="playtime" ng-click="play(); playtime=false"></i>
+            {{viewdate}}
+          </p>
         </div>
       </scrollbar>
       <div zoomin="zoomin" zoomout="zoomout">
-      <div class="head">
 
-      </div>
       <div class="zoom">
           <i class="fa fa-plus-square-o fa-3x" ng-click="zoomin()"></i><br>
           <i class="fa fa-minus-square-o fa-3x" ng-click="zoomout()"></i>
