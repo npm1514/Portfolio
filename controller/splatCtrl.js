@@ -1,7 +1,9 @@
 app.controller("splatCtrl", function($scope) {
 
-  var width = 1450;
-  var height = 700;
+
+  var width = window.screen.width*0.65;
+  var height = window.screen.height*0.65;
+  console.log(width);
 
   $scope.splat = function() {
 

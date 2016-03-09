@@ -1,6 +1,6 @@
-.slide, .view1, .view1, .view2, .view3, .view4-1, .view4-2, .view4-3, .view5 {
+.slide, .view1, .view1, .view2, .view3, .view4, .view5, .view6 {
   min-width: 100vw;
-  min-height:110vh;
+  min-height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -44,7 +44,7 @@ h1, h2, h4,  p {
 h1 {
   font-size: 120px;
   margin: auto;
-  margin-top: 32vh;
+  margin-top: 340px;
   text-align: center;
   width: 100%;
   letter-spacing: 6px;
@@ -182,7 +182,7 @@ i {
   border: 3px solid #a0ce4e;
 }
 
-.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4-1 .titleblock,.view5 .titleblock {
+.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock {
   top:100px;
 }
 
@@ -227,7 +227,7 @@ splat {
   left:0;
   right:0;
   z-index: -100;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -236,37 +236,21 @@ splat {
   top: -80px;
 }
 
-.view4-1 {
-  background-image: url("images/macbook.jpg");
+.view3 h2 {
+  margin-top: -100px;
+}
+
+.view4 {
   background-position: center;
 }
 
-.view4-2 {
-  background-color:#f9e9dd;
-}
-
-.view4-2 .titleblock, .view4-3 .titleblock {
-  top: 1vh;
-}
-
-.view4-2 iframe, .view4-3 iframe {
-  margin-top: 200px;
-}
-
-.view4-3 {
-  background-color:#bddde0;
-}
-
 .view5 {
-  background-image: url("images/airport.jpg");
+
 }
 
-.view5 h2, .view5 h4, .view5 p, .view5 a {
-  color: #fff;
-}
-
-.view5 h4 {
+.view6 h4 {
   padding-top: 25px;
+  color: #fff;
 }
 
 footer {
@@ -274,26 +258,18 @@ footer {
   z-index: 100;
   width: 100vw;
   height: 70px;
-  color: #fff;
   bottom: 0vh;
-  background-color: #000;
+  background-color: #5a5255;
 }
 
-span {
-  font-family: "Amatic SC";
+/*span {
   font-size: 50px;
   font-weight: bold;
-}
+}*/
 
 @media only screen and (max-width: 900px) {
-  .view4-2 .titleblock, .view4-3 .titleblock {
-    margin-top: 100px;
-  }
   iframe {
     height:60vh;
-  }
-  .view4-2 iframe, .view4-3 iframe {
-    margin-top: 250px;
   }
 }
 
@@ -342,5 +318,180 @@ span {
 @media only screen and (max-height: 300px) {
   iframe {
     height: 10vh;
+  }
+}
+
+
+
+/***************************************/
+
+
+
+.land {
+  fill: #5a5255;
+  stroke-opacity: 1;
+  stroke: #8d8d8d;
+}
+
+.noclicks {
+  pointer-events:none;
+}
+
+.point {
+  opacity:.6;
+  stroke: red;
+}
+
+.flyin {
+  stroke-width:1;
+  opacity: .8;
+  stroke: purple;
+}
+
+.flyout {
+  stroke-width:0.5;
+  opacity: .8;
+  stroke: gold;
+}
+
+.arc {
+  stroke: black;
+  stroke-width: 0.25;
+  opacity: 0.25;
+  fill: none;
+}
+
+.arc, .flyin, .flyout {
+  stroke-linejoin: round;
+  fill:none;
+}
+
+.head {
+  position: fixed;
+}
+
+i {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bars {
+  width: 30%;
+  height: 860px;
+  position: absolute;
+  top:0;
+  right:0;
+  margin: 4.5vh 0;
+}
+.bars div {
+  clear: both;
+  height: 12.5vh;
+  float: right;
+  margin: 2vh 0;
+  background-color: lightblue;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.bars div p {
+  font-size: 5vh;
+  float: right;
+  width: max-content;
+  z-index: 100;
+  margin: 2vh;
+}
+
+.earth {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 880px;
+  float: left;
+  z-index: -100;
+}
+
+.moreinfo {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  width: 400px;
+  height: max-content;
+  background-color: #5a5255;
+  opacity: .8;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.infoexit {
+  position: absolute;
+  color: red;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  cursor: pointer;
+  border-bottom: 2px solid red;
+  padding: 0 5px;
+}
+
+.infoexit:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.zoom {
+  margin: 20px;
+  margin-top: 120px;
+  text-align: left;
+}
+
+.scrollbar {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 500px;
+  height: 100px;
+  z-index: 200;
+  text-align: center;
+}
+
+.timeplay {
+  display: inline-block;
+  width: max-content;
+  text-align: left;
+}
+
+.timeplay i, .timeplay p {
+  display: inline-block;
+  float: left;
+}
+
+.timeplay i {
+  margin: 20px;
+  color: #a0ce4e;
+}
+
+.timeplay i:hover {
+  color: #5a5255;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bars {
+    position: absolute;
+    width: 100%;
+    margin-top: 900px;
+  }
+  svg {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .moreinfo {
+    width: 80%;
   }
 }

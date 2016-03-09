@@ -16,13 +16,15 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="plugins/d3.v3.min.js"></script>
+    <script src="plugins/queue.v1.min.js"></script>
+    <script src="plugins/topojson.v1.min.js"></script>
+    <script src="plugins/moment.js"></script>
   </head>
 
-  <body ng-controller="includer" ng-cloak>
+  <body ng-cloak>
     <header>
       <div class="logo">
         <a href="" id="moveTo">
@@ -55,29 +57,27 @@
         </div>
       </div>
 
-
-      <div class="section" data anchor="view4">
-        <div class="slide">
-          <div ng-include="'pages/view4-1.html'"></div>
-        </div>
-        <div class="slide">
-          <div ng-include="'pages/view4-2.html'"></div>
-        </div>
-
-        <div class="slide">
-          <div ng-include="'pages/view4-3.html'"></div>
-        </div>
-      </div>
-
-      <!-- <div class="section" data-anchor="view3">
+      <div class="section" data-anchor="view3">
         <div class="slide">
           <div ng-include="'pages/view3.html'"></div>
         </div>
-      </div> -->
+      </div>
+
+      <div class="section" data anchor="view4">
+        <div class="slide">
+          <div ng-include="'pages/view4.html'"></div>
+        </div>
+      </div>
 
       <div class="section" data-anchor="view5">
         <div class="slide">
           <div ng-include="'pages/view5.html'"></div>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="view6">
+        <div class="slide">
+          <div ng-include="'pages/view6.html'"></div>
         </div>
       </div>
 
@@ -86,10 +86,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="d3.v3.min.js"></script>
     <script src="./plugins/jquery.fullPage.js"></script>
     <script src="./app.js"></script>
-    <script src="./controller/includer.js" charset="utf-8"></script>
+    <script src="./controller/barsCtrl.js" charset="utf-8"></script>
+    <script src="./controller/earthCtrl.js" charset="utf-8"></script>
+    <script src="./controller/mapSvc.js" charset="utf-8"></script>
+    <script src="./controller/scrollbarCtrl.js" charset="utf-8"></script>
     <script src="./controller/splatCtrl.js" charset="utf-8"></script>
   </body>
 

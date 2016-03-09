@@ -1,6 +1,55 @@
-var app = angular.module("portfolio", ['ui.router']);
+var app = angular.module("portfolio", ['ui.router'])
+.directive('body', function() {
+ return {
+   restrict: 'E',
+   scope: {
+     zoomin: '=',
+     zoomout: '='
+   }
+ };
+})
+.directive('earth', function() {
+ return {
+   restrict: 'E',
+   scope: {
+     zoomin: '=',
+     zoomout: '=',
+     cohortupdate:'='
+   },
+   controller: 'earthCtrl'
+ };
+})
+.directive('bars', function() {
+ return {
+  restrict: 'E',
+  scope: {
+    data:'=',
+    cohortupdate:'=',
+  },
+  controller: 'barsCtrl'
+ };
+})
+.directive('splat', function() {
+  return {
+    restrict: 'E',
+    controller: 'splatCtrl'
+  };
+})
+.directive('scrollbar', function() {
+ return {
+   restrict: 'E',
+   scope: {
+     cohortupdate: '=',
+     arcit: '&',
+     viewdate: '=',
+     play: '='
+   },
+   controller: 'scrollbarCtrl'
+ };
+});
 
 $(document).ready(function() {
+
   $('#fullpage').fullpage({
     anchors: ['view1', 'view2', 'view3', 'view4', 'view5'],
     menu: '#menu',
@@ -34,37 +83,4 @@ $(document).ready(function() {
     $('.menuopen').slideToggle();
 
   }));
-});
-
-app.config(function($urlRouterProvider, $stateProvider) {
-    $stateProvider
-    .state('about', {
-      url: '/about',
-      templateUrl: 'templates/aboutHome.html'
-    })
-    .state("artStuff", {
-      url: "/artStuff",
-      templateUrl: "templates/artStuff.html"
-    })
-    .state("buildStuff", {
-      url: "/buildStuff",
-      templateUrl: "templates/buildStuff.html"
-    })
-    .state("resume", {
-      url: "/resume",
-      templateUrl: "templates/resume.html"
-    })
-    .state("contact", {
-      url: "/contact",
-      templateUrl: "templates/contact.html"
-    });
-    $urlRouterProvider
-      .otherwise('/about');
-});
-
-app.directive('splat', function() {
-  return {
-    restrict: 'E',
-    controller: 'splatCtrl'
-  };
 });
