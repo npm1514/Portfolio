@@ -42,6 +42,7 @@ h2 {
   color: #5a5255;
   font-weight: 300;
   text-shadow: 1px 1px 1px #fff;
+  margin-top: -25px;
 }
 
 h3 {
@@ -399,7 +400,7 @@ i {
 
 .zoom {
   margin: 20px;
-  margin-top: 90px;
+  margin-top: 150px;
   text-align: left;
 }
 
@@ -427,6 +428,10 @@ i {
   display: inline-block;
   width: max-content;
   text-align: left;
+}
+
+.timeplay i {
+  margin: 20px;
 }
 
 .timeplay i, .timeplay p {

@@ -7,14 +7,14 @@ app.controller("scrollbarCtrl", function($scope, mapSvc, $rootScope) {
 
   $scope.viewdate = moment().set({
     "year": 2014,
-    "month": 8,
-    "date": 7
+    "month": 10,
+    "date": 10
   }).format('MMMM DD, YYYY');
 
   $scope.scrolldate = moment().set({
     "year": 2014,
-    "month": 8,
-    "date": 7
+    "month": 10,
+    "date": 10
   });
 
   //definition of circle drag
@@ -100,8 +100,8 @@ app.controller("scrollbarCtrl", function($scope, mapSvc, $rootScope) {
     var percentdrag = time/range;
     var start = moment().set({
       "year": 2014,
-      "month": 8,
-      "date": 7
+      "month": 10,
+      "date": 10
     });
     var end = moment();
     var timeline = end._d - start._d;

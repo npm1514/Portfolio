@@ -41,7 +41,7 @@ app.service('mapSvc', function($http, $state) {
             "country": "USA"
           },
           "geometryto": {
-            "coordinates": [-111.8833, 40.7500],
+            "coordinates": [-80.8833, 40.7500],
             "city": "Salt Lake City",
             "state": "Utah",
             "country": "USA"
@@ -62,7 +62,7 @@ app.service('mapSvc', function($http, $state) {
             "country": "USA"
           },
           "geometryto": {
-            "coordinates": [-111.6965, 40.2988],
+            "coordinates": [-90.6965, 30.2988],
             "city": "Orem",
             "state": "Utah",
             "country": "USA"
