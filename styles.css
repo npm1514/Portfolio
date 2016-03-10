@@ -162,13 +162,14 @@ i {
   border: 3px solid #a0ce4e;
 }
 
-.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock {
+.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock, .view7 .titleblock {
   top:0;
 }
 
 .view1 {
   z-index: 0;
 }
+
 
 .tri1 {
   height: 500px;
@@ -230,11 +231,8 @@ splat {
   width: 80vw;
   height: 70vh;
   margin: auto;
+  display: block;
 }
-
-/*.titleblock .proj {
-  padding: 0;
-}*/
 
 .proj img{
   width: 80vw;
@@ -247,9 +245,44 @@ splat {
 
 }
 
-.view7 h4 {
+.wrapspicnwords {
+  width: 480px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.pics {
+  float: left;
+}
+
+.pics img {
+  border-radius: 5px;
+  display: block;
+  width: 150px;
+  margin: 15px;
+}
+
+.words {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  float: left;
+}
+
+.exptitles {
+  text-align: left;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.words p {
+  text-align: left;
+  font-size: 14px;
+  color: #000;
   padding-top: 25px;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 300px;
 }
 
 footer {
@@ -261,23 +294,9 @@ footer {
   background-color: #5a5255;
 }
 
-/*span {
-  font-size: 50px;
-  font-weight: bold;
-}*/
-
-@media only screen and (max-width: 1550px) {
-  .projwrap {
-    width: 95%;
-    margin: auto;
-    text-align: center;
-  }
-  .proj {
-    display: block;
-  }
-  .view4 .titleblock {
-    top:0;
-  }
+footer h4 {
+  padding: 25px;
+  color: #fff;
 }
 
 
