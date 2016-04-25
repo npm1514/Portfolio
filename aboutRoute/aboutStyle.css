@@ -86,7 +86,7 @@ i {
 .navwrap {
   max-width: 760px;
   margin: 0 auto;
-  display: none;
+  /*display: none;*/
 }
 
 .navlink {

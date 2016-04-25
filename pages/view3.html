@@ -1,33 +1,9 @@
 <div class="view3">
   <div class="titleblock">
-    <h2>DATA VISUALIZATION</h2>
+    <h2>VISUAL DATA</h2>
 
-    <div class="mapCont">
-      <scrollbar class="scrollbar" cohortupdate='cohortupdate' viewdate="viewdate" play="play">
-        <div class="timeplay">
-          <p>
-            <i class="fa fa-play" ng-hide="playtime" ng-click="play(); playtime=true"></i>
-            <i class="fa fa-pause" ng-show="playtime" ng-click="play(); playtime=false"></i>
-            {{viewdate}}
-          </p>
-        </div>
-      </scrollbar>
-      <div zoomin="zoomin" zoomout="zoomout">
-
-      <div class="zoom">
-          <i class="fa fa-plus-square-o fa-3x" ng-click="zoomin()"></i><br>
-          <i class="fa fa-minus-square-o fa-3x" ng-click="zoomout()"></i>
-      </div>
-      <earth class="earth" id="earth" zoomin="zoomin" zoomout="zoomout" cohortupdate='cohortupdate'></earth>
-    </div>
-      <bars class="bars" data="data" cohortupdate='cohortupdate' refresh="refresh">
-        <div class="students"><p>({{data[0]}}) <span class="barTitle">Students</span></p></div>
-        <div class="states"><p>({{data[1]}}) <span class="barTitle">States</span></p></div>
-        <div class="countries"><p>({{data[2]}}) <span class="barTitle">Countries</span></p></div>
-        <div class="retention"><p>({{data[3]}}%) <span class="barTitle">Retention</span></p></div>
-        <div class="jobs"><p>({{data[4]}}%) <span class="barTitle">Jobs</span></p></div>
-      </bars>
-    </div>
-
+    <a class="proj" href="http://www.globe.geordyn.com" target="_blank">
+      <img src="./images/globe.PNG" />
+    </a>
   </div>
 </div>

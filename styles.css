@@ -1,6 +1,6 @@
 .slide, .view1, .view1, .view2, .view3, .view4, .view5, .view6 {
-  width: 100%;
-  height:100%;
+  width: 100vw;
+  height:100vh;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -15,7 +15,7 @@ header {
   background-color: transparent;
 }
 
-h1, h2, h4,  p {
+h1, h2, p {
   margin: 0;
   color: #5a5255;
   font-family: 'Oswald', sans-serif;
@@ -23,9 +23,9 @@ h1, h2, h4,  p {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 10em;
   margin: auto;
-  margin-top: 440px;
+  margin-top: 60vh;
   text-align: center;
   width: 100%;
   letter-spacing: 6px;
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 120px;
+  font-size: 7em;
   margin: auto;
   text-align: center;
   width: 100%;
@@ -42,7 +42,7 @@ h2 {
   color: #5a5255;
   font-weight: 300;
   text-shadow: 1px 1px 1px #fff;
-  margin-top: -25px;
+  margin-top: 0px;
 }
 
 h3 {
@@ -54,9 +54,11 @@ h3 {
 }
 
 h4 {
+  color: #5a5255;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  font-family: sans-serif;
-
+  margin: 0;
+  text-align: center;
 }
 
 h5 {
@@ -163,16 +165,19 @@ i {
   border: 3px solid #a0ce4e;
 }
 
-.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock, .view7 .titleblock {
+.view1 .titleblock, .view2 .titleblock,.view3 .titleblock, .view4 .titleblock,.view5 .titleblock, .view6 .titleblock, .view7 .titleblock, .view8 .titleblock {
   top:0;
 }
 
 .view1 {
-  z-index: 0;
+  background-image: url("./images/ZOM219_grande.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: none;
+  background-image:
 }
 
-
-.tri1 {
+/*.tri1 {
   height: 500px;
   width: 450px;
   margin: auto;
@@ -191,7 +196,7 @@ i {
   width: 800px;
   margin: auto;
   fill:green;
-}
+}*/
 
 .directions {
   position: absolute;
@@ -238,6 +243,33 @@ splat {
 .proj img{
   width: 80vw;
   height: 70vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.flexwrap {
+  width: 95vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.proj-mini {
+  border: 1px solid #000;
+  width: 20vw;
+  height: 20vh;
+  margin: auto;
+  float: left;
+  margin: 10px;
+}
+
+.proj-mini img{
+  width: 20vw;
+  height: 20vh;
   overflow: hidden;
   margin: 0;
 }
@@ -300,150 +332,29 @@ footer h4 {
   color: #fff;
 }
 
+@media only screen and (max-width: 775px) {
+  h1 {
+    margin-top: 40vh;
+  }
+  .proj {
+    height: 50vh;
+  }
+  .proj img {
+    height: 50vh;
+  }
+  h2 {
+    margin-top: 100px;
+  }
+  .extras {
+    margin-top: 0px;
+  }
+}
 
 @media only screen and (max-width: 550px) {
   footer {
     height: 95px;
   }
-}
-
-@media only screen and (max-width: 365px) {
-  footer {
-    height: 115px;
+  .wrapspicnwords {
+    margin-top: -10px;
   }
-}
-
-
-/***************************************/
-
-
-
-.land {
-  fill: #5a5255;
-  stroke-opacity: 1;
-  stroke: #8d8d8d;
-}
-
-.noclicks {
-  pointer-events:none;
-}
-
-
-.flyin {
-  stroke-width:1;
-  opacity: .8;
-  stroke: purple;
-}
-
-.flyout {
-  stroke-width:0.5;
-  opacity: .8;
-  stroke: gold;
-}
-
-.arc {
-  stroke: black;
-  stroke-width: 0.25;
-  opacity: 0.25;
-  fill: none;
-}
-
-.arc, .flyin, .flyout {
-  stroke-linejoin: round;
-  fill:none;
-}
-
-.head {
-  position: fixed;
-}
-
-i {
-  color: #fff;
-  cursor: pointer;
-}
-
-.bars {
-  width: 30%;
-  height: 860px;
-  position: absolute;
-  top:100px;
-  right:0;
-  margin: 4.5vh 0;
-}
-.bars div {
-  clear: both;
-  height: 12.5vh;
-  float: right;
-  margin: 2vh 0;
-  background-color: lightblue;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.bars div p {
-  font-size: 5vh;
-  float: right;
-  width: max-content;
-  z-index: 100;
-  margin: 2vh;
-}
-
-.earth {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 880px;
-  float: left;
-  z-index: -10;
-  height: 100%;
-}
-
-.zoom {
-  margin: 20px;
-  margin-top: 150px;
-  text-align: left;
-}
-
-.scrollbar {
-  position: absolute;
-  top: 160px;
-  left: 0px;
-  width: 500px;
-  height: 100px;
-  z-index: 200;
-  text-align: center;
-}
-
-@keyframes flash {
-  0% {
-    color: #a0ce4e;
-  }
-  100% {
-    color: #8d8d8d;
-  }
-}
-
-.timeplay {
-
-  display: inline-block;
-  width: max-content;
-  text-align: left;
-}
-
-.timeplay i {
-  margin: 20px;
-}
-
-.timeplay i, .timeplay p {
-  display: inline-block;
-  float: left;
-}
-
-.timeplay i {
-  margin: 5px 5px;
-  color: #8d8d8d;
-}
-
-.fa-play {
-  animation: flash linear 1s infinite;
 }
