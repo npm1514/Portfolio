@@ -11,8 +11,7 @@
     <meta property="og:image" content="./aboutRoute/images/SoL-Logo.png">
     <meta property="og:url" content="http://www.nickmarucci.com">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href='./plugins/jquery.fullPage.css' rel='stylesheet'
-     type='text/css'>
+
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
@@ -24,7 +23,7 @@
     <script src="plugins/moment.js"></script>
   </head>
 
-  <body ng-cloak>
+  <body ng-cloak ng-controller="splatCtrl">
     <header>
       <div class="logo">
         <a href="" id="moveTo">
@@ -44,63 +43,83 @@
         </ul>
       </div>
     </header>
-
-    <div id="fullpage">
-      <div class="section" data-anchor="view1">
-        <div ng-include="'pages/view1.html'"></div>
-
-      </div>
-
-      <div class="section" data-anchor="view2">
-        <div class="slide">
-          <div ng-include="'pages/view2.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data-anchor="view3">
-        <div class="slide">
-          <div ng-include="'pages/view3.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data anchor="view4">
-        <div class="slide">
-          <div ng-include="'pages/view4.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data-anchor="view5">
-        <div class="slide">
-          <div ng-include="'pages/view5.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data-anchor="view6">
-        <div class="slide">
-          <div ng-include="'pages/view6.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data-anchor="view7">
-        <div class="slide">
-          <div ng-include="'pages/view7.html'"></div>
-        </div>
-      </div>
-
-      <div class="section" data-anchor="view8">
-        <div class="slide">
-          <div ng-include="'pages/view8.html'"></div>
-        </div>
-      </div>
-
+    <div class="view1">
+      <div class="spacer"></div>
+      <h1 class="bigname">NICK MARUCCI</h1>
     </div>
+    <hr>
+    <div class="view2 splat">
+        <h2>ARTISTIC CREATIVITY</h2>
+        <p>Creativity is the magic that breeds innovation</p>
+    </div>
+    <hr>
+    <div class="view3">
+      <h2>VISUAL DATA</h2>
+      <div class="titleblock">
+        <a class="proj" href="http://globe.geordyn.com" target="_blank">
+          <img src="./images/globe.PNG" />
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="view4">
+      <h2>WEB DESIGN</h2>
+      <div class="titleblock">
+        <a class="proj" href="http://www.sol-innovations.com" target="_blank">
+          <img src="./images/solsite.PNG" />
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="view5">
+      <h2>SCHEDULING</h2>
+      <div class="titleblock">
+        <a class="proj" href="http://scheduler.nickmarucci.com" target="_blank">
+          <img src="./images/schedulesite.PNG" />
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="view6">
+      <h2>BOOTSTRAP</h2>
+      <div class="titleblock">
+        <a class="proj" href="http://www.pierce-auto.com" target="_blank">
+          <img src="./images/autosite.PNG" />
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="view7">
+      <h2>MINI PROJECTS</h2>
+      <div class="titleblock">
+        <div class="flexwrap">
+          <a class="proj-mini" href="http://rockpaperscissors.nickmarucci.com/" target="_blank">
+            <img src="./images/RPS.PNG" />
+            <h4>Rock Paper Scissors JS App</h4>
+          </a>
+          <a class="proj-mini" href="http://catzanddogz.nickmarucci.com/" target="_blank">
+            <img src="./images/catzndogz.PNG" />
+            <h4>Catz And Dogz Angular Router</h4>
+          </a>
+          <a class="proj-mini" href="http://decider.nickmarucci.com/" target="_blank">
+            <img src="./images/decider.PNG" />
+            <h4>Decision Matrix</h4>
+          </a>
+          <a class="proj-mini" href="http://d3compiler.nickmarucci.com/" target="_blank">
+            <img src="./images/d3compiler.PNG" />
+            <h4>D3 Data Compiler</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h4>All rights reserved. www.nickmarucci.com Copyright 2016</h4>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./plugins/jquery.fullPage.js"></script>
     <script src="./app.js"></script>
-    <script src="./controller/mapSvc.js" charset="utf-8"></script>
     <script src="./controller/splatCtrl.js" charset="utf-8"></script>
   </body>
 
