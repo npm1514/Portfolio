@@ -174,10 +174,6 @@ i {
   background-size: 50vw;
 }
 
-.view2 {
-  z-index: 0;
-}
-
 .proj {
   border: 1px solid #000;
   width: 80vw;
@@ -219,10 +215,6 @@ i {
   height: 200px;
   overflow: hidden;
   margin: 0;
-}
-
-.view5 {
-
 }
 
 .wrapspicnwords {
