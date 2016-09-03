@@ -6,9 +6,6 @@ $(document).ready(function() {
       nodes = [],
       labelAnchors = [],
       links = [];
-  console.log(window);
-  console.log(h)
-
 
   var vis = d3.select("body")
     .insert("svg:svg",":first-child")
@@ -153,5 +150,27 @@ $(document).ready(function() {
 
     anchorNode.call(updateNode);
     link.call(updateLink);
+
   });
+
+  var root = nodes;
+
+  vis.on("mousemove", function() {
+     var p1 = d3.mouse(this);
+     for (var i = 0; i < root.length; i++) {
+       if(i % 2 == 0){
+         if (root[i].px < w/2){
+           root[i].px -= p1[0]/5000;
+         } else {
+           root[i].px += p1[0]/5000;
+         }
+         if (root[i].py < viewh * i + viewh/2){
+           root[i].py -= p1[1]/5000;
+         } else {
+           root[i].py += p1[1]/5000;
+         }
+       }
+     }
+     force.resume();
+   });
 });
