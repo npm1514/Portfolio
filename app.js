@@ -14,8 +14,15 @@ $(document).ready(function() {
 
   $('.menuopen').hide();
 
-  $('.menu').on('click', (function(){
+  $('.portfolio').on('click',function(){
+    $('.menuopen').hide();
+    $('html, body').animate({
+    scrollTop: $(".view2").offset().top
+}, 1000);
+
+  })
+  $('.menu').on('click', function(){
     $('.menuopen').slideToggle();
 
-  }));
+  });
 });

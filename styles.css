@@ -9,6 +9,9 @@ body {
   margin: 0;
 }
 
+.noders {
+  position: absolute;
+}
 header {
   position:fixed;
   top: 0;
