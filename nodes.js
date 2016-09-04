@@ -155,7 +155,7 @@ $(document).ready(function() {
 
   var root = nodes;
 
-  vis.on("mousemove", function() {
+  d3.select('body').on("mousemove", function() {
      var p1 = d3.mouse(this);
      for (var i = 0; i < root.length; i++) {
        if(i % 2 == 0){
