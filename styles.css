@@ -280,6 +280,11 @@ footer h4 {
   height: max-content;
 }
 
+footer a {
+  color: #fff;
+  height: max-content;
+}
+
 @media only screen and (max-width: 1000px) {
   .view1 {
     background-size: 75%;
