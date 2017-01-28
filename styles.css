@@ -282,7 +282,6 @@ footer h4 {
 
 .zombie {
   color: #fff;
-  height: max-content;
 }
 
 @media only screen and (max-width: 1000px) {
