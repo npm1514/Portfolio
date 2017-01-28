@@ -265,38 +265,28 @@ input:required:invalid:focus, textarea:required:invalid:focus {
   transition: all .5s ease-in-out;
 }
 
+.spacer {
+  height: 50px;
+  width: 100vw;
+  clear:both;
+}
 
 footer {
   width: 100%;
-  height: 75px;
+  height: max-content;
   color: #fff;
   background-color: #000;
-  display: inline-block;
-  margin-top: 50px;
-}
-
-.foot {
-  max-width: 860px;
-  height: 100%;
-  margin: auto;
-}
-
-.footleft {
-  width: 20%;
-  float: left;
-  margin-right: 5%;
-  height: 100%;
-}
-
-.footright {
-  width: 70%;
-  height: 100%;
-  float: left;
+  clear: both;
   text-align: center;
 }
 
 footer h4 {
   padding: 25px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 760px) {
@@ -319,15 +309,6 @@ footer h4 {
       padding-left: 5%;
       padding-right: 5%;
     }
-
-    .footleft {
-      display: none;
-    }
-
-    .footright {
-      width: 100%;
-    }
-
     .rightbanner {
       display: inline-block;
     }
@@ -335,18 +316,10 @@ footer h4 {
       display: inline-block;
     }
 }
-@media only screen and (max-width: 570px) {
-  footer {
-    height: 95px;
-  }
-}
 @media only screen and (max-width: 405px) {
   .rightbanner {
     height: 150px;
   }
 
-  footer {
-    height: 120px;
-  }
 
 }
