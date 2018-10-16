@@ -1,12 +1,7 @@
 var app = angular.module("portfolio", ['ui.router']);
 
-$(document).ready(function() {
 
-  // $('#showExamples').click(function(e){
-  //   e.stopPropagation();
-  //   e.preventDefault();
-  //   $('#examplesList').toggle();
-  // });
+$(document).ready(function() {
 
   $('html').click(function(){
     $('#examplesList').hide();
@@ -25,4 +20,14 @@ $(document).ready(function() {
     $('.menuopen').slideToggle();
 
   });
+  var io = new IntersectionObserver(
+    (e, b) => {
+      $('#'+e[0].target.id)[0].src = $('#'+e[0].target.id)[0].attributes['attr'].value
+    }
+  );
+  // Start observing an element
+  io.observe($('#bigimg1')[0]);
+  io.observe($('#bigimg2')[0]);
+  io.observe($('#bigimg3')[0]);
+  io.observe($('#bigimg4')[0]);
 });
