@@ -1,4 +1,8 @@
-$(document).ready(function() {
+$(document).ready(nodeThing);
+$(window).resize(nodeThing)
+
+function nodeThing() {
+  $('.noders').remove();
   var w = window.innerWidth - 20,
       viewh = window.innerHeight - 20,
       h = $('html').height(),
@@ -13,7 +17,7 @@ $(document).ready(function() {
     .attr("width", w)
     .attr("height", h);
 
-  for(var i = 0; i < 7; i++) {
+  for(var i = 0; i < 5; i++) {
     var node = {
       label : ""
     };
@@ -173,4 +177,4 @@ $(document).ready(function() {
      }
      force.resume();
    });
-});
+}

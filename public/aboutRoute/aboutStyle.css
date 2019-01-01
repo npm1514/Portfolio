@@ -9,7 +9,10 @@ h1, h2, h3, h4, p, ul {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Montserrat";
   color: #cf0000;
 }
@@ -48,6 +51,7 @@ i {
 }
 
 .headtitle {
+  width: 85%;
   max-width: 760px;
   height: 75px;
   margin: auto;
@@ -67,16 +71,18 @@ i {
 
 .logo {
   float: left;
+  display: none;
 }
 
 .menu {
   text-align: center;
   float: right;
-  display: inline-block;
+  display: block;
   margin-top: 25px;
 }
 
 .nav {
+  width: 150px;
   display: block;
   max-width: 760px;
   margin: 0 auto;
@@ -86,7 +92,7 @@ i {
 .navwrap {
   max-width: 760px;
   margin: 0 auto;
-  /*display: none;*/
+  display: none;
 }
 
 .navlink {
@@ -121,40 +127,18 @@ i {
   margin-bottom: 40px;
 }
 
-.leftside {
-  width: 20%;
-  float: left;
-  margin-right: 5%;
-}
-
-.leftbanner {
-  /*background-color: #8d8d8d;*/
-  width:98%;
-}
-
-.lefttext {
-  padding-top: 40px;
-}
-
-.leftbanner h1 {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  text-shadow: 1px 1px 2px #000;
-}
-
 .rightside {
-  width: 70%;
-  float: left;
+  width: 90%;
+  margin: auto;
+  padding: 0 5%;
 }
 
 .rightbanner {
   width: 100%;
   background-color: #888888;
-  height: 75px;
   text-align: center;
   margin-bottom: 50px;
-  display: none;
+  display: inline-block;
 }
 
 .rightpic {
@@ -288,38 +272,30 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+@media only screen and (min-width: 405px) {
+  .logo {
+    display: block;
+  }
+}
 
-@media only screen and (max-width: 760px) {
-    .headtitle {
-      width: 85%;
+@media only screen and (min-width: 760px) {
+    h1 {
+      font-size: 60px;
     }
-
     .nav {
-      width: 150px;
+      width: 100%;
     }
-
     .navwrap {
-      display: none;
+      display: flex;
+      width: 100%;
     }
     .leftside {
-      display: none;
-    }
-    .rightside {
-      width: 90%;
-      padding-left: 5%;
-      padding-right: 5%;
+      display: block;
     }
     .rightbanner {
-      display: inline-block;
+      display: none;
     }
     .menu {
-      display: inline-block;
+      display: none;
     }
-}
-@media only screen and (max-width: 405px) {
-  .rightbanner {
-    height: 150px;
-  }
-
-
 }

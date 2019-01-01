@@ -62,7 +62,7 @@ app.service("emailServ", function($http) {
           "data": {
             "key": "m9WhwvP-pCZrAOmfEmMceg",
             "message": {
-              "from_email": "npmarucci@sol-innovations.com",
+              "from_email": "npm1514@gmail.com",
               "to": [{
                 "email": "npmarucci@sol-innovations.com",
                 "name": "Sol Innovations",

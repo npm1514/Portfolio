@@ -1,6 +1,6 @@
 .view1, .view1, .view2, .view3, .view4, .view5, .view6, .view7 {
   width: 100vw;
-  min-height: 100vh;
+  min-height:75vh;
   text-align: center;
   margin: 0 auto;
   background-color: transparent;
@@ -11,7 +11,6 @@ body {
 
 svg {
   position: absolute;
-  /*z-index: -1;*/
   pointer-events: none;
 }
 
@@ -104,17 +103,19 @@ i {
 }
 
 .logo {
-  float: left;
-  margin: 25px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
   border: 2px solid #fff;
   padding: 5px 8px 0 10px;
   box-shadow: 0 0 10px #000;
 }
 
 .menu {
-  float: right;
+  position: absolute;
   font-size: 40px;
-  margin: 25px;
+  top: 25px;
+  right: 25px;
 }
 
 .spacer {
@@ -122,9 +123,11 @@ i {
 }
 
 .menuopen {
-  float: right;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
   text-align: right;
-  margin: 25px;
   z-index: 100;
 }
 
@@ -133,7 +136,7 @@ i {
 }
 
 .menuopen ul {
-  width:250px;
+  width:100vw;
   margin:0;
   padding: 0;
   border-radius: 5px;
@@ -179,9 +182,15 @@ i {
 .view1 {
   background-image: url("./images/ZOM219_grande.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 50px;
   box-shadow: none;
-  background-size: 50vw;
+  background-size: 100%;
+  position: relative;
+}
+
+.bigname {
+  position: absolute;
+  bottom: 50px;
 }
 
 .proj {
@@ -190,13 +199,18 @@ i {
   height: 70vh;
   margin: auto;
   display: block;
+  background-position: center;
+  background-size: cover;
 }
 
-.proj img{
-  width: 80vw;
-  height: 70vh;
-  overflow: hidden;
-  margin: 0;
+#bigimg1 {
+  background-image: url("./images/ostk.png");
+}
+#bigimg2 {
+  background-image: url("./images/globe.PNG");
+}
+#bigimg4 {
+  background-image: url("./images/schedulesite.PNG");
 }
 
 .flexwrap {
@@ -284,17 +298,26 @@ footer h4 {
   color: #fff;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 550px) {
+
   .view1 {
-    background-size: 75%;
+    background-position: center top;
+    background-size: 50vw;
+  }
+
+  .view1, .view1, .view2, .view3, .view4, .view5, .view6, .view7 {
+    min-height: 100vh;
+  }
+  .menuopen {
+    top: 25px;
+    right: 25px;
+  }
+  .menuopen ul {
+    width:250px;
   }
 }
 
 @media only screen and (max-width: 775px) {
-  h1 {
-    position: relative;
-    bottom: 50px;
-  }
   .proj {
     height: 50vh;
   }
@@ -306,13 +329,8 @@ footer h4 {
   }
 }
 
-@media only screen and (max-width: 550px) {
-
+@media only screen and (max-width: 1000px) {
   .view1 {
-    background-size: 95%;
-  }
-
-  .view1, .view1, .view2, .view3, .view4, .view5, .view6, .view7 {
-    min-height:75vh;
+    background-size: 75%;
   }
 }
